@@ -1,0 +1,33 @@
+server:
+  port: 7777
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sg_blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 5MB
+#  redis:
+#    host: 192.168.95.206
+
+mybatis-plus:
+  configuration:
+    # 日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      # 逻辑删除
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
+# 七牛云 OSS
+oss:
+  accessKey: gwHgTQVaz_6kUEoWMpVruJZ0hyOOVrswGlD_4FY_
+  secretKey: rNmSNMH2ggAxaGb6CZLY6aNP6UN67ahGSSfvDkUc
+  bucket: mika-sg-blog
+  url: http://rupdp7sqe.hn-bkt.clouddn.com/
