@@ -7,7 +7,7 @@
 SpringBoot,MybatisPlus,SpringSecurity,EasyExcel,Swagger2,JWT,Redis,Echarts,Vue,ElementUI....
 ## 运行
 
-在目录 `资源/SQL` 下，有项目 MySQL 数据库所需的数据表的 sql 脚本文件，运行项目前请先在数据库里新建 SGBlog 数据库，然后运行所有的 sql 脚本文件创建表。
+在目录 `资源/SQL` 下，有项目 MySQL 数据库所需的数据表的 sql 脚本文件，运行项目前请先在数据库里新建 sg_blog 数据库，然后运行所有的 sql 脚本文件创建表。
 
 该项目有前台和后台两套系统，前台即负责对外访问浏览页面，后台是负责管理员等角色登录管理博客后台页面。
 
